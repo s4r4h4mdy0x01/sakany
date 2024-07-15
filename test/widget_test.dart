@@ -10,7 +10,6 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:sakany/app.dart';
 import 'package:sakany/core/router/app_router.dart';
 
-import 'package:sakany/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
