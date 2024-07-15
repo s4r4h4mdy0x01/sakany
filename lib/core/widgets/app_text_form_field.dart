@@ -15,10 +15,11 @@ class AppTextFormField extends StatelessWidget {
       required this.hintText,
       this.focusedBorder,
       this.enabledBorder,
-      this.validator});
+      this.validator, this.prefixIcon});
   final EdgeInsetsGeometry? contentPadding;
   final Color? fillColorBackground;
   final Widget? suffixIcon;
+    final Widget?  prefixIcon;
   final String hintText;
   final TextStyle? hintStyle;
   final InputBorder? focusedBorder;
@@ -63,6 +64,7 @@ class AppTextFormField extends StatelessWidget {
         hintText: hintText,
      //   hintStyle: TextStyleManager.,
         suffixIcon: suffixIcon,
+        prefixIcon:  prefixIcon,
       ),
    //   style: TextStyles.font14DarkOrangeMedium,
     );
