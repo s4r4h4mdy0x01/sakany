@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sakany/core/const/string_maneger.dart';
+import 'package:sakany/core/helper/extensions.dart';
 import 'package:sakany/core/helper/spacing.dart';
 import 'package:sakany/core/theming/colors.dart';
 import 'package:sakany/features/onboarding/widgets/welcome_column_text.dart';
 
+import '../../../core/router/routes.dart';
 import '../../../core/theming/styles.dart';
 import '../../../core/widgets/app_text_button.dart';
 
@@ -40,14 +42,18 @@ class CardSignInOrSignUp extends StatelessWidget {
             buttonText: StringManeger.signIn,
             textStyle: TextStyManager.font16WhiteBold,
             backgroundColor: ColorManager.primary,
-            onPressed: () {},
+            onPressed: () {
+              context.pushReplacementNamed( RoutesString.signInScreen);
+            },
           ),
           verticalSpace(5),
           AppTextButton(
             buttonText: StringManeger.signUp,
             textStyle: TextStyManager.font16PrimaryBold,
             backgroundColor: ColorManager.white,
-            onPressed: () {},
+            onPressed: () {
+                 context.pushReplacementNamed( RoutesString.signUpScreen);
+            },
           ),
           verticalSpace(30),
           const OrDivider(),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:sakany/core/router/routes.dart';
+import 'package:sakany/features/sign_in/ui/screens/sign_in_screen.dart';
+import 'package:sakany/features/sign_up/ui/screens/sign_up_screen.dart';
 
 import '../../features/onboarding/onboardingScreen.dart';
 
@@ -9,6 +11,15 @@ class AppRouter {
       case RoutesString.onboardingScreen:
         return MaterialPageRoute(
           builder: (context) => const OnboardingScreen(),
+        );
+
+      case RoutesString.signInScreen:
+        return MaterialPageRoute(
+          builder: (context) => const SignInScreen(),
+        );
+      case RoutesString.signUpScreen:
+        return MaterialPageRoute(
+          builder: (context) => const SignUpScreen(),
         );
 
       default:
