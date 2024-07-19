@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:sakany/core/const/string_maneger.dart';
-import 'package:sakany/core/helper/extensions.dart';
 import 'package:sakany/core/helper/spacing.dart';
 import 'package:sakany/core/theming/colors.dart';
 import 'package:sakany/core/widgets/app_text_form_field.dart';
-import 'package:sakany/features/onboarding/widgets/welcome_column_text.dart';
-
-import '../../../../core/router/routes.dart';
+import 'package:sakany/features/sign_in/ui/widgets/email_and_password.dart';
 import '../../../../core/theming/styles.dart';
 import '../../../../core/widgets/app_text_button.dart';
 import '../../../../core/widgets/or_divider.dart';
@@ -24,8 +21,8 @@ class CardSignIn extends StatelessWidget {
           color: Colors.white,
           boxShadow: [
             BoxShadow(
-              color: ColorManager.grey.withOpacity(
-                0.8,
+              color: ColorManager.black.withOpacity(
+                0.6,
               ),
               blurRadius: 15,
               offset: const Offset(0, 3),
@@ -33,25 +30,7 @@ class CardSignIn extends StatelessWidget {
           ]),
       child: Column(
         children: [
-          AppTextFormField(
-            hintText: 'Email',
-            hintStyle:  TextStyManager.font16GreyMedium,
-            prefixIcon: const  Icon(
-              Icons.email,
-              color: ColorManager.primary,
-              size:  28,
-            ),
-          ),
-          verticalSpace(10),
-         AppTextFormField(
-            hintText: 'Password',
-              hintStyle:  TextStyManager.font16GreyMedium,
-            prefixIcon:  const Icon(
-              Icons.vpn_key,
-              color: ColorManager.primary,
-              size: 28,
-            ),
-          ),
+       const   EmailAndPassword(),
           verticalSpace(20),
           AppTextButton(
             buttonText: StringManeger.signIn,

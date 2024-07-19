@@ -3,7 +3,7 @@ import 'package:sakany/core/router/routes.dart';
 import 'package:sakany/features/sign_in/ui/screens/sign_in_screen.dart';
 import 'package:sakany/features/sign_up/ui/screens/sign_up_screen.dart';
 
-import '../../features/onboarding/onboardingScreen.dart';
+import '../../features/onboarding/onboarding_screen.dart';
 
 class AppRouter {
   static Route<dynamic> onGenerate(RouteSettings routeSettings) {
