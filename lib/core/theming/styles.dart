@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:sakany/core/const/string_maneger.dart';
 import 'package:sakany/core/theming/colors.dart';
 import 'package:sakany/core/theming/font_weight.dart';
 
@@ -27,6 +26,12 @@ class TextStyManager {
     fontSize: 16.sp,
     fontWeight: FontWeightManager.bold,
     color: ColorManager.primary,
+ 
+  );
+   static TextStyle font16GreyMedium = TextStyle(
+    fontSize: 16.sp,
+    fontWeight: FontWeightManager.medium,
+    color: ColorManager.grey,
  
   );
    static TextStyle font20PrimaryBold = TextStyle(
